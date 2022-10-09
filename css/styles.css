@@ -1,3 +1,7 @@
+html { 
+	scroll-behavior: smooth 
+}
+
 h1{
 	font-style: bold;
 	font-size: 128px;
@@ -10,23 +14,27 @@ h3{
 	margin-top: 15px;
 }
 
+.post_content p{
+	font-weight: 100px; 
+}
+
 .principal_index{
-	display: block;
 	color: #EEEEEE;
 	margin: 20px;
 	border: 2px solid #EEEEEE;
 }
 
 .logo_index{
-	float: left;
-	margin-left: 525px;
-	margin-top: 170px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 5vw;
 }
 
 .logo_text_index{
 	float: left;
 	margin-right: 30px;
-	margin-left: 675px;
+	margin-left: 30%;
 	margin-top: -190px;
 	color: #EEEEEE;
 }
@@ -37,9 +45,7 @@ h3{
 }
 
 .text_index{
-	margin-left: 425px;
-	margin-right: 400px;
-	margin-bottom: 195px;
+	margin: 0px 200px 0px 200px;
 	padding: 20px;
 	font-family: "Roboto";
 	font-weight: 400;
@@ -51,12 +57,11 @@ h3{
 	margin-top: 20px;
 }
 
+
 .arrows{
 	width: 75px;
-	margin-left: 370px;
-	margin-top: 125px;
-	margin-bottom: -125px;
-	display: inline-block;
+	margin: 125px auto 0 auto;
+	display: block
 }
 
 .hover a:hover{
@@ -76,13 +81,15 @@ h3{
 }
 
 .menu_about{
-	display: inline-block;
-	margin: 10px 0px 20px 39%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	font-family: "Montserrat";
 }
 
+
 .menu_about a:link, .menu_about a:visited{
-	padding: 8px 12px;
+	padding: 10px 15px;
 }
 
 .menu_about a:hover{
@@ -98,10 +105,9 @@ a:link, a:visited{
 .container_about{
 	width: 70%;
 	display: flex block;
-	float: left;
 	background-color: #3D3C3C;
 	color: #EEEEEE;
-	margin: 25px;
+	margin: 25px auto 0px auto;
 	padding: 10px 20px;
 	font-family: "Roboto";
 	font-weight: 800;
@@ -121,9 +127,10 @@ a:link, a:visited{
 }
 
 .logo_about{
-	float: left;
 	display: flex;
-	margin: 10px 0px 20px 43%;
+	align-items: center;
+	justify-content: center;
+	margin: 20px
 }
 
 .text_about{
@@ -154,7 +161,10 @@ a:link, a:visited{
 }
 
 .post_content img{
-	margin-left: 300px;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 50%;
 }
 
 .topic_content{
@@ -162,6 +172,9 @@ a:link, a:visited{
 }
 
 .post_title{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	margin: -10px -20px;
 	padding: 12px;
 	color: #EEEEEE;
@@ -177,4 +190,35 @@ a:link, a:visited{
 	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 	}
 
+#guide {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
+#guide a:hover{
+	padding: 10px;
+	color: #2B2A2A;
+	background: #EEEEEE;
+}
+
+#guide a:link, #guide a:visited{
+	padding: 8px 12px;
+	border: 1px solid #EEEEEE;
+	border-radius: 5px;
+}
+
+.floating { 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
