@@ -2,26 +2,17 @@ html {
 	scroll-behavior: smooth 
 }
 
-h1{
-	font-style: bold;
-	font-size: 128px;
-	margin-bottom: -20px;
-	margin-top: 15px;
-}
-
-h3{
-	font-style: bold;
-	margin-top: 15px;
-}
-
 .post_content p{
 	font-weight: 100px; 
 }
 
 .principal_index{
+	width: 100%;
+	height: 100%;
 	color: #EEEEEE;
-	margin: 20px;
 	border: 2px solid #EEEEEE;
+	margin: 0px;
+	min-height: 100vh;
 }
 
 .logo_index{
@@ -29,19 +20,6 @@ h3{
 	align-items: center;
 	justify-content: center;
 	margin-top: 5vw;
-}
-
-.logo_text_index{
-	float: left;
-	margin-right: 30px;
-	margin-left: 30%;
-	margin-top: -190px;
-	color: #EEEEEE;
-}
-
-.logo_text_index p{
-	margin-top: 0px;
-	font-size: 36px;
 }
 
 .text_index{
@@ -60,7 +38,7 @@ h3{
 
 .arrows{
 	width: 75px;
-	margin: 125px auto 0 auto;
+	margin: 100px auto 0 auto;
 	display: block
 }
 
@@ -70,7 +48,6 @@ h3{
 	background: #EEEEEE;
 }
 
-/* About */
 
 .top_about{
 	clear: both;
@@ -152,10 +129,6 @@ a:link, a:visited{
 	font-weight: 800;
 }
 
-.clear{
-	clear: both;
-}
-
 .post_content{
 	margin: 30px 10px;
 }
@@ -164,7 +137,7 @@ a:link, a:visited{
 	display: block;
   	margin-left: auto;
   	margin-right: auto;
-  	width: 50%;
+  	width: 75%;
 }
 
 .topic_content{
@@ -182,13 +155,13 @@ a:link, a:visited{
 	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 	}
 
-	.topic_title{
+.topic_title{
 	margin: 0px -10px;
 	padding: 12px;
 	color: #EEEEEE;
 	background-color: #201F1F;
 	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-	}
+}
 
 #guide {
 	display: flex;
